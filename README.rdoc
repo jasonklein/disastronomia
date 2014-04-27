@@ -4,6 +4,6 @@ Disastronomia
 
 This app was built as part of my General Assembly WDI homework.
 
-It is hosted on Heroku at link:http://disastronomia.herokuapp.com/.
+It is hosted on Heroku at link:http://disastronomia.herokuapp.com.
 
 This is a Rails 3.2.17 application using Ruby 2.0.0.
