@@ -1,0 +1,11 @@
+<h2><%= @ingredient.name %></h2>
+<% if @ingredient.recipes.any? %>
+  <p class="section-heading">Recipes</p>
+  <ul>
+    <% @ingredient.recipes.each do |recipe| %>
+      <li><%= link_to recipe.name, recipe_path(recipe) %> <span class="italics"><%= "(#{recipe.category.try(:name)})" %></span>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<%= render partial: "layouts/edit_delete_actions", locals: { model_name: Ingredient, edit_path: edit_ingredient_path, delete_path: delete_ingredient_path, item: @ingredient.name } %>
