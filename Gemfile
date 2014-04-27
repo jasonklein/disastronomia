@@ -10,7 +10,14 @@ gem 'pg'
 # Per Heroku: "[rails_12factor] enables serving assets in production and setting your logger to standard out,
 # both of which are required to run a Rails 4 application on a twelve-factor provider.
 # The gem also makes the appropriate changes for Rails 3 apps."
+
 gem 'rails_12factor', group: :production
+
+# Recommended by Heroku, to ensure requests do not tie up
+# the application's dyno past the request timeout
+
+gem 'rack-timeout'
+
 
 
 gem 'cancan', '1.6.10'
@@ -38,7 +45,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
