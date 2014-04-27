@@ -10,6 +10,7 @@ Recipe.delete_all
 Category.delete_all
 Ingredient.delete_all
 IngredientsRecipe.delete_all
+User.delete_all
 
 recipes = Recipe.create([
   { category_id: 4, name:"This is why we can't have nice things w. Aliens", description:"Stop the kind aliens from fixing humanity's problems and ruining your profits", prep_time: 9, instructions: "Fap XOXO photo booth roof party, chillwave leggings flexitarian. Shoreditch mumblecore narwhal tofu gentrify. Sriracha jean shorts direct trade, fanny pack mustache 8-bit chillwave occupy. Slow-carb small batch quinoa single-origin coffee PBR&B. Wolf fashion axe lo-fi, Cosby sweater kogi vinyl cred +1 direct trade leggings cliche Tonx.", image:"" },
