@@ -8,6 +8,8 @@ Disastronomia::Application.routes.draw do
 
   get "sessions/destroy"
 
+  get "categories/attribution" => "categories#attribution", as: "attribution_path"
+
   resources :categories
   resources :recipes
   resources :ingredients
